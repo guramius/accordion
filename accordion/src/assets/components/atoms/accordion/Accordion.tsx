@@ -62,7 +62,7 @@ const Accordion = () => {
 
   return (
     <div>
-      <h1 className="text-[#1E1F36] text-[32px] font-bold font-['Kumbh_Sans'] leading-normal uppercase">faq</h1>   
+      <h1 className="sm-custom:mr-auto sm-custom:pb-[38px] sm-custom:text-center text-[#1E1F36] text-[32px] font-bold font-['Kumbh_Sans'] leading-normal uppercase">faq</h1>   
       <div>
       {data.map((item) => (
         <div
@@ -70,15 +70,15 @@ const Accordion = () => {
           className="border-b border-[#E8E8EA] py-4"
         >
           <div  onClick={() => handleClick(item.id)} className='flex justify-between gap-[72px] pr-[7px] items-baseline cursor-pointer'>
-            <p className={`${open === item.id ? 'text-[#1E1F36]' : 'text-[#4B4C5F]'} `}>
+            <p className={`${open === item.id ? 'text-[#1E1F36]' : 'text-[#4B4C5F]'} transition-all duration-[300ms] ease-in-out`}>
               {item.question}
             </p>
-          <span style={{transform: open === item.id ? 'rotate(180deg)' : 'rotate(0deg)',transition: 'transform 0.3s ease',}}>
+          <span style={{transform: open === item.id ? 'rotate(180deg)' : 'rotate(0deg)',transition: 'transform 0.9s ease'}}>
               {item.svg}
             </span>
           </div>
           {open === item.id && (
-            <p className="text-sm text-gray-600 mt-2">
+            <p className="w-[319px] sm-custom:w-[279px] text-sm text-gray-600 mt-2 transition-transform duration-[300ms] ease-in-out">
               {item.answer}
             </p>
           )}

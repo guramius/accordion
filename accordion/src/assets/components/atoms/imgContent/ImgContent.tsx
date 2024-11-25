@@ -4,10 +4,10 @@ import shedow from "../../picture/Path.png"
 
 const ImgContent = () => {
   return (
-    <div className="relative w-full h-screen">
-      <img className="absolute top-0 left-0" src={rectangle} alt="Rectangle" />
-      <img className="absolute top-0 left-0" src={Desktop} alt="Desktop" />
-      <img className='absolute' src={shedow} alt="re" />
+    <div className="relative sm-custom:top-[-200px] md:top-0 md:left-[-50px]">
+      <img className="absolute top-[120px] left-[-90px] z-10" src={rectangle} alt="Rectangle" />
+      <img className=" " src={Desktop} alt="Desktop" />
+      <img className='absolute top-[0px]' src={shedow} alt="re" />
     </div>    
   )
 }

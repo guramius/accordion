@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'sm-custom': '270px', 
+      },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(180deg, #B068E9 0%, #6463E7 100%)',
       },
